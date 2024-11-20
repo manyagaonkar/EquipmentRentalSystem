@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EquipTrack - Register</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        body{
+            overflow-y:scroll;
+            height:150vh;
+            overflow-x: unset;
+        }
+        ::-webkit-scrollbar{
+            width: 15px;
+        }
+        ::-webkit-scrollbar-track{
+            background: #e4e4e4 ;
+        }
+        ::-webkit-scrollbar-thumb{
+            background:rgb(117, 117, 117);
+        }
+    </style>
+</head>
+<body>
+    <div class="img1" styles="background-repeat: no-repeat;
+    background-size: auto 150vh; 
+    background-attachment: fixed;
+    background-position: center center;">
+        <img source src="./inventory.jpg" alt="" >
+    </div>
+    <header>
+        <h1>Register</h1>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./services.php">Services</a>
+            <a href="./signin.html">Sign In</a>
+            <a href="./register.html">Register</a>
+        </nav>
+    </header>
+    <main>
+        <form action="./register.php" method="POST">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 EquipTrack. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EquipTrack - Order</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        body{
+            overflow-y:scroll;
+            height:150vh;
+        }
+        ::-webkit-scrollbar{
+            width: 15px;
+        }
+        ::-webkit-scrollbar-track{
+            background: #e4e4e4 ;
+        }
+        ::-webkit-scrollbar-thumb{
+            background:rgb(117, 117, 117);
+        }
+    </style>
+        
+</head>
+<body>
+    <div class="img1" styles="height=150vh">
+        <img source src="./inventory.jpg" alt="" >
+    </div>
+    <div class="overlay">
+        <header>
+        <h1>Order Equipment</h1>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./services.php">Services</a>
+            <a href="./signin.html">Sign In</a>
+            <a href="./register.html">Register</a>
+        </nav>
+    </header>
+    <main>
+        <form  action="./order.php" method="POST">
+            <label for="customer_name">Name:</label>
+            <input type="text" id="customer_name" name="customer_name" required>
+            
+            <label for="contact_no">Contact No:</label>
+            <input type="text" id="contact_no" name="contact_no" required>
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            
+            <label for="house_address">House Address:</label>
+            <textarea id="house_address" name="house_address" required></textarea>
+
+            <label for="equipment_id">Equipment ID:</label>
+            <input type="text" id="equipment_id" name="equipment_id" required>
+
+            <label for="order_date">Order Date:</label>
+            <input type="text" id="order_date" name="order_date" required>
+            
+            <button type="submit">Submit Order</button>
+        </form>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 EquipTrack. All rights reserved.</p>
+    </footer>
+</body>
+</html>
